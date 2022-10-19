@@ -15,3 +15,11 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin hoverEffect {
+  &:hover {
+	transition: ease-in-out 0.3s;
+	transform: translate(0.2rem, -0.2rem);
+	box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.2);
+  }
+}

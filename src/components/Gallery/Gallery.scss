@@ -1,0 +1,18 @@
+.lodgings {
+  &__gallery {
+	display: grid;
+	overflow: scroll;
+	max-height: 80vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 40px 40px;
+	grid-template-areas:
+    ". ."
+    ". .";
+	
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
