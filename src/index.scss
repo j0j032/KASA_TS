@@ -1,3 +1,9 @@
-:root{
-  background-color: cadetblue;
-}
+@import "styles/reset";
+@import "styles/variables";
+@import "styles/breakPoints";
+@import "styles/mixins";
+@import "styles/common";
+@import "components/Header/Header";
+@import 'pages/Error/Error404';
+@import 'pages/Home/Home';
+@import 'pages/Lodging/Lodging';
