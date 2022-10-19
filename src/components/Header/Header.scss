@@ -5,7 +5,7 @@
 	align-items: center;
 	height: 6.4rem;
 	padding: 0 5.6rem;
-	background-color: #F1F2F7;
+	background-color: $main-grey;
 	
 	&--side {
 	  display: flex;
@@ -44,7 +44,7 @@
 	color: $white;
 	border: 1px solid $white;
 	border-radius: 24px;
-	background-color: #FB7474;
+	background-color: $red;
 	
 	&:hover {
 	  box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.63);
