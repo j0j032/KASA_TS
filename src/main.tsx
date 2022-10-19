@@ -1,8 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import RouterConfig from './navigation/RouterConfig'
+import './index.scss'
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {QueryClientProvider, QueryClient} from "react-query";
+import {ReactQueryDevtools} from "react-query/devtools";
+
+const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-    <App />
+    <BrowserRouter>
+        <QueryClientProvider client={queryClient}>
+            <Routes>
+                <Route path='/*' element={<RouterConfig/>}/>
+            </Routes>
+            <ReactQueryDevtools initialIsOpen={false}/>
+        </QueryClientProvider>
+    </BrowserRouter>
 )

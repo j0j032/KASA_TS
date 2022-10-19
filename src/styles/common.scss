@@ -1,0 +1,18 @@
+html {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+  color: $black;
+  background-color: $white;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
