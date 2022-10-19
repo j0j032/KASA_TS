@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaSearch, FaRegBell, FaChevronDown} from 'react-icons/fa'
+import {FaRegBell, FaChevronDown} from 'react-icons/fa'
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
 
