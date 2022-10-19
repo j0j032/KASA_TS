@@ -16,3 +16,25 @@ html {
 main {
   flex-grow: 1;
 }
+
+.btn {
+  height: 4rem;
+  margin: 0 2.4rem;
+  padding: 0 1.6rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  
+  &:hover {
+	box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.63);
+  }
+}
+
+.btn--black {
+  color: $white;
+  background-color: $black;
+}
+
+.filter {
+
+}
