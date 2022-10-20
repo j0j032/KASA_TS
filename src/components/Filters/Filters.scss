@@ -44,10 +44,7 @@
 	  cursor: pointer;
 	  border: none;
 	  background: $main-grey;
-	  
-	  &:hover {
-		box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.2);
-	  }
+	  @include hoverEffect;
 	}
   }
 }
@@ -58,8 +55,5 @@
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  
-  &:hover {
-	box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.2);
-  }
+  @include hoverEffect;
 }

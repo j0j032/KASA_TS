@@ -19,7 +19,7 @@ const Filters = () => {
                 }
             </div>
             <select className='sort-btn' name='sort'>
-                <option value=''><span> ⏚ </span>Trier par</option>
+                <option value=''> ⏚ Trier par</option>
                 <option value='descPrice'>Prix croissant</option>
                 <option value='ascPrice'>Prix décroissant</option>
                 <option value='rate'>Les mieux notés</option>

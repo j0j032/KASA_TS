@@ -1,0 +1,63 @@
+.card {
+  &__container {
+	width: 100%;
+	padding: 1.6rem;
+	cursor: pointer;
+	border: 2px solid $main-grey;
+	border-radius: 8px;
+	@include hoverEffect;
+  }
+  
+  &__cover {
+	width: 100%;
+	height: 16rem;
+	border-radius: 8px;
+	object-fit: cover;
+  }
+  
+  &__heading {
+	@include flexRowInline;
+	justify-content: space-between;
+	margin-top: 0.8rem;
+  }
+  
+  &__title {
+	font-size: 1.8rem;
+	max-width: 88%;
+  }
+  
+  &__rating {
+	@include flexRowInline;
+	gap: 0.4rem;
+  }
+  
+  &__location {
+	margin-top: 0.8rem;
+	@include flexRowInline;
+	color: $font-grey;
+	gap: 0.8rem;
+	
+	> p {
+	  font-size: 1.4rem;
+	}
+  }
+  
+  &__details {
+	@include flexRowInline;
+	justify-content: space-between;
+	margin-top: 1.6rem;
+	
+	> p {
+	  font-size: 1.4rem;
+	}
+  }
+  
+  &__price {
+	font-size: 1.8rem;
+	font-weight: bold;
+  }
+}
+
+.star {
+  color: #FFC400;
+}
