@@ -1,0 +1,11 @@
+.divide-content {
+  display: flex;
+  justify-content: start;
+  padding: 0 5.6rem 5.6rem 5.6rem;
+  gap: 3.2rem;
+  
+  > section {
+	width: 50%;
+	height: 100%;
+  }
+}
