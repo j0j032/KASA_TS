@@ -1,41 +1,30 @@
-import React, {useState} from 'react'
-import {useInfiniteQuery, useQuery} from 'react-query'
+import React from 'react'
+import {useQuery} from 'react-query'
 import {getLodgings} from '../../api/lodging.requests'
 import LodgingCard from '../LodgingCard/LodgingCard'
-import {loadLodgings} from "../../api/query";
+import {AxiosError} from "axios";
+import {lodging} from "../../types";
 
-const Gallery = () => {
-    const [page, setPage] = useState(1)
-    /*const {data: lodgings, isLoading, isError, error} = useQuery(['lodgings'], () => getLodgings)*/
+const Gallery: React.FC = (): JSX.Element => {
+	const {
+		data,
+		isLoading,
+		isError,
+		error
+	} = useQuery<Array<lodging>, AxiosError>(['lodgings'], () => getLodgings, {
+		staleTime: 100_000,
+		retry: false
+	})
 
-    const {
-        data,
-        isLoading,
-        isError,
-        error,
-        isFetching,
-        fetchNextPage
-    } = useInfiniteQuery(['lodgings'], ({pageParam}) => loadLodgings(pageParam),
-        {
-            staleTime: 60_000,
-            getNextPageParam: (lastPage, allPages) => allPages.length + 1
-        })
-    console.log(data)
-    const lodgings = data?.pages?.flat() || []
-    console.log(lodgings)
+	const gallery = <section className='lodgings__gallery'>
+		{data?.map((lodging) => (
+			<LodgingCard key={lodging.id} data={lodging}/>
+		))}
+	</section>
 
-    if (isError) return <p>Error: {error.message}</p>
+	if (isError) return <p>Error: {error.message}</p>
 
-    return isLoading ? (<p>LOADING</p>) : (
-        <>
-            <section className='lodgings__gallery'>
-                {lodgings.map((lodging) => (
-                    <LodgingCard key={lodging.id<String>} data={lodging}/>
-                ))}
-            </section>
-            <button onClick={() => fetchNextPage()} disabled={isLoading || isFetching}>Page Suivante</button>
-        </>
-    )
+	return isLoading ? (<p>LOADING</p>) : (gallery)
 }
 
 export default Gallery

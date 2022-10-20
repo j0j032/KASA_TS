@@ -1,8 +1,9 @@
 import React from 'react'
-import {FaStar} from 'react-icons/fa/index'
-import {BsGeoAlt} from 'react-icons/bs/index'
+import {FaStar} from 'react-icons/fa'
+import {BsGeoAlt} from 'react-icons/bs'
+import {lodging} from "../../types";
 
-const LodgingCard = ({data}) => {
+const LodgingCard: React.FC<lodging> = ({data}) => {
     const {title, cover, location, beds, square, Guests, price, area, rating} = data
     const bed = beds > 1 ? ' lits' : ' lit'
     const people = Guests > 1 ? ' personnes' : ' personne'
@@ -18,7 +19,7 @@ const LodgingCard = ({data}) => {
             </div>
             <div className='card__location'>
                 <BsGeoAlt/>
-                <p>{location}</p>
+                <p>{location + ` ${area}e`}</p>
             </div>
             <div className='card__details'>
                 <p>{`${beds + bed} - ${square} m² - ${Guests + people}`}</p>
