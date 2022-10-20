@@ -1,5 +1,5 @@
 import React from 'react'
-import Map from 'react-map-gl'
+import Map, {Marker} from 'react-map-gl'
 
 const MainMap: React.FC = (): JSX.Element => {
 
@@ -15,7 +15,9 @@ const MainMap: React.FC = (): JSX.Element => {
                 style={{width: '100%', height: '100%'}}
                 mapStyle='mapbox://styles/j0j032/cl9gyr4ep008x15pu513jnsu4/draft'
             >
-                Markers here</Map>
+                
+
+            </Map>
         </section>
     )
 }

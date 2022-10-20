@@ -24,6 +24,11 @@
       "Frigo",
       "WIFI"
     ],
+    "adress": "3 Place des Ternes, 75017 Paris, France",
+    "coordinates": [
+      48.8782808,
+      2.2975259
+    ],
     "tags": [
       "Batignolles",
       "Montmartre",
@@ -64,6 +69,11 @@
       "Cuisine équipée",
       "Télévision"
     ],
+    "adress": "17 Rue de Marseille, 75010 Paris, France",
+    "coordinates": [
+      48.87158203125,
+      2.363574743270874
+    ],
     "tags": [
       "Canal Saint Martin",
       "République",
@@ -102,6 +112,11 @@
       "Buttes Chaumont",
       "Laumière"
     ],
+    "adress": "22 Rue Meynadier, 75019 Paris, France",
+    "coordinates": [
+      48.88349914550781,
+      2.383333206176758
+    ],
     "price": 60,
     "beds": 1,
     "Guests": 2,
@@ -139,6 +154,11 @@
       "Night Life",
       "Bastille",
       "Oberkampf"
+    ],
+    "adress": "72 Rue Jean-Pierre Timbaud, 75011 Paris, France",
+    "coordinates": [
+      48.8668212890625,
+      2.3740837574005127
     ],
     "price": 90,
     "beds": 2,
@@ -179,6 +199,11 @@
       "Marais",
       "Canal Saint Martin"
     ],
+    "adress": "33 Rue de Lancry, 75010 Paris, France",
+    "coordinates": [
+      48.870994567871094,
+      2.3615548610687256
+    ],
     "price": 210,
     "beds": 2,
     "Guests": 3,
@@ -213,6 +238,11 @@
       "Sacré coeur",
       "Moulin Rouge",
       "Pigalle"
+    ],
+    "adress": "134 Avenue Junot, 75018 Paris, France",
+    "coordinates": [
+      48.88917922973633,
+      2.336341142654419
     ],
     "price": 330,
     "beds": 3,
@@ -249,6 +279,11 @@
       "Pigalle",
       "Montmartre",
       "Moulin Rouge"
+    ],
+    "adress": "27 Rue Lepic, 75018 Paris, France",
+    "coordinates": [
+      48.8858528137207,
+      2.334792137145996
     ],
     "price": 120,
     "beds": 2,
@@ -289,6 +324,11 @@
       "Champs Elysées",
       "Concorde"
     ],
+    "adress": "1 Avenue d'Eylau, 75116 Paris, France",
+    "coordinates": [
+      48.86358939138436,
+      2.2861275185058627
+    ],
     "price": 400,
     "beds": 2,
     "Guests": 4,
@@ -324,6 +364,11 @@
       "Montparnasse",
       "Saint-Germain des près",
       "Le bon marché"
+    ],
+    "adress": "6 Rue du Montparnasse, 75006 Paris, France",
+    "coordinates": [
+      48.84431838989258,
+      2.327444076538086
     ],
     "price": 240,
     "beds": 3,
@@ -361,6 +406,11 @@
       "Oberkampf",
       "Bastille"
     ],
+    "adress": "43 Rue Plichon, 75011 Paris, France",
+    "coordinates": [
+      48.862815856933594,
+      2.3851420879364014
+    ],
     "price": 80,
     "beds": 2,
     "Guests": 3,
@@ -394,6 +444,11 @@
       "Marais",
       "Hotel de ville",
       "Ile st.Louis"
+    ],
+    "adress": "15 Rue de Jouy, 75004 Paris, France",
+    "coordinates": [
+      48.8551561,
+      2.3578557
     ],
     "price": 160,
     "beds": 1,
@@ -431,6 +486,11 @@
       "République",
       "Canal Saint Martin"
     ],
+    "adress": "23 Rue Béranger, 75003 Paris, France",
+    "coordinates": [
+      48.8667398,
+      2.3632195
+    ],
     "price": 120,
     "beds": 1,
     "Guests": 2,
@@ -454,7 +514,7 @@
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-8.jpg"
     },
     "rating": "5",
-    "location": "Versailles",
+    "location": "Meudon",
     "equipments": [
       "SDB",
       "Cuisine équipée",
@@ -467,11 +527,16 @@
       "Nature",
       "Chateau de Versailles"
     ],
+    "adress": "Rue Terre-Neuve, 92190 Meudon, France",
+    "coordinates": [
+      48.8076878,
+      2.2359138
+    ],
     "price": 80,
     "beds": 2,
     "Guests": 3,
     "square": 42,
-    "area": 78
+    "area": 92
   },
   {
     "id": "7cbb378e",
@@ -490,7 +555,7 @@
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
     },
     "rating": "4",
-    "location": "Versailles",
+    "location": "Saint-cloud",
     "equipments": [
       "SDB",
       "Cuisine équipée",
@@ -505,13 +570,19 @@
       "Forêt",
       "Nature",
       "Grande maison",
-      "Chateau de Versailles"
+      "Chateau de Versailles",
+      "Golf de saint-cloud"
+    ],
+    "adress": "Rue de Garches, 92210 Saint-Cloud, France",
+    "coordinates": [
+      48.8434945,
+      2.2029966
     ],
     "price": 450,
     "beds": 4,
     "Guests": 7,
     "square": 180,
-    "area": 78
+    "area": 92
   },
   {
     "id": "ba55a0cc",
@@ -530,7 +601,7 @@
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
     },
     "rating": "3",
-    "location": "Le Vésinet",
+    "location": "Neuilly sur seine",
     "equipments": [
       "Bouilloire",
       "SDB",
@@ -548,11 +619,16 @@
       "Nature",
       "Grande maison"
     ],
+    "adress": "18 Boulevard Georges Seurat, 92200 Neuilly-sur-Seine, France",
+    "coordinates": [
+      48.8947584,
+      2.2683046
+    ],
     "price": 330,
     "beds": 3,
     "Guests": 6,
     "square": 142,
-    "area": 78
+    "area": 92
   },
   {
     "id": "1e181317",
@@ -586,6 +662,11 @@
       "Bois de Boulogne",
       "Loft",
       "Luxe"
+    ],
+    "adress": "23 Rue Ybry, 92200 Neuilly-sur-Seine, France",
+    "coordinates": [
+      48.886968170843616,
+      2.259408332424284
     ],
     "price": 190,
     "beds": 2,
@@ -625,6 +706,11 @@
       "Vue Parc",
       "Charme"
     ],
+    "adress": "67 Boulevard Bineau, 92200 Neuilly-sur-Seine, France",
+    "coordinates": [
+      48.8867885,
+      2.2808304
+    ],
     "price": 135,
     "beds": 2,
     "Guests": 3,
@@ -654,7 +740,13 @@
       "Louvre",
       "Rivoli",
       "Concorde",
-      "Etienne Marcel"
+      "Etienne Marcel",
+      "Place Vendôme"
+    ],
+    "adress": "14 Rue Danielle Casanova, Paris, France",
+    "coordinates": [
+      48.8679058,
+      2.3321951
     ],
     "price": 70,
     "beds": 1,
@@ -692,6 +784,11 @@
       "Concorde",
       "Etienne Marcel"
     ],
+    "adress": "13 Rue Tiquetonne, 75002 Paris, France",
+    "coordinates": [
+      48.8645472,
+      2.3489162
+    ],
     "price": 80,
     "beds": 1,
     "Guests": 2,
@@ -725,6 +822,11 @@
       "Rivoli",
       "Concorde",
       "Etienne Marcel"
+    ],
+    "adress": "22 Rue Montmartre, 75002 Paris, France",
+    "coordinates": [
+      48.8641086,
+      2.3456037
     ],
     "price": 105,
     "beds": 1,
