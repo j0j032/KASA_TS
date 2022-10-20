@@ -7,6 +7,7 @@ const LodgingCard: React.FC<lodging> = ({data}) => {
     const {title, cover, location, beds, square, Guests, price, area, rating} = data
     const bed = beds > 1 ? ' lits' : ' lit'
     const people = Guests > 1 ? ' personnes' : ' personne'
+    const areas = area < 21 ? ` ${area}e` : ` ${area}`
     return (
         <article className='card__container'>
             <img className='card__cover' src={cover} alt={title}/>
@@ -19,7 +20,7 @@ const LodgingCard: React.FC<lodging> = ({data}) => {
             </div>
             <div className='card__location'>
                 <BsGeoAlt/>
-                <p>{location + ` ${area}e`}</p>
+                <p>{location + areas}</p>
             </div>
             <div className='card__details'>
                 <p>{`${beds + bed} - ${square} m² - ${Guests + people}`}</p>
