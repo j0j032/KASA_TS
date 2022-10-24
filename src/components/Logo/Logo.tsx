@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Logo = () => {
+const Logo: React.FC = (): JSX.Element => {
     return (
         <>
-            <h1 className='jap'>⌂</h1>
-            <h1 className='logo logo--black'>K⍺s⍺</h1>
+            <h1 className='logo logo--black'>⌂Kasa</h1>
         </>
     );
 };

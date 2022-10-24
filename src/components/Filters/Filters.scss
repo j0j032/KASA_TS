@@ -2,7 +2,7 @@
   &__container {
 	@include flexRowInline;
 	justify-content: space-between;
-	height: 8.8rem;
+	min-height: 8.8rem;
 	padding: 0 5.6rem;
 	background-color: $white;
   }
@@ -43,7 +43,7 @@
 	  padding: 0.8rem 1.6rem;
 	  cursor: pointer;
 	  border: none;
-	  background: $main-grey;
+	  background: #FCEEE4;
 	  @include hoverEffect;
 	}
   }

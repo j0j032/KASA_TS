@@ -1,0 +1,21 @@
+.map {
+  &__container {
+	overflow: hidden;
+	height: 80vh;
+	border-radius: 12px;
+  }
+  
+  &__pin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2.4rem;
+	width: 3.2rem;
+	height: 3.2rem;
+	color: $white;
+	border: 2px solid $white;
+	border-radius: 8px;
+	background: $black;
+	@include hoverEffect;
+  }
+}
