@@ -19,5 +19,9 @@ export type lodging = {
     Guests: number,
     square: number,
     area: number,
-    data: lodging
+    adress: string,
+    coordinates: Array<number>,
 }
+
+export type Lodgings = lodging[] | undefined
+
