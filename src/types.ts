@@ -3,7 +3,7 @@ interface host {
     pictures: string
 }
 
-export type lodging = {
+export interface lodging {
     id: string,
     title: string,
     cover: string,
@@ -19,5 +19,7 @@ export type lodging = {
     Guests: number,
     square: number,
     area: number,
-    data: lodging
+    adress: string,
+    coordinates: Array<number>,
 }
+

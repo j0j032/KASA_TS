@@ -8,6 +8,7 @@ import {lodging} from "../../types";
 import {AxiosError} from "axios";
 import {getLodgings} from "../../api/lodging.requests";
 
+
 const Home = () => {
 
     const {
