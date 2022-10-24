@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Filters = () => {
 
     const tags: Array<string> = ["Louvre", "Montmartre", 'Champs Elysées', 'Marais', 'Trocadéro', 'Bastille']

@@ -1,6 +1,6 @@
-import {Lodgings} from "../../types";
+import './Gallery.scss'
+import {Lodgings} from "../../../../types";
 import {LodgingCard} from "../LodgingCard/LodgingCard";
-import React from "react";
 
 type GalleryProps = {
     lodgings: Lodgings

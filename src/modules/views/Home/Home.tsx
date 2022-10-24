@@ -1,12 +1,11 @@
-import React from 'react';
 import Header from "../../components/Header/Header";
 import Filters from '../../components/Filters/Filters'
-import {Gallery} from "../../components/Gallery/Gallery";
-import MainMap from "../../components/Map/MainMap";
+import {Gallery} from "./Gallery/Gallery";
+import MainMap from "./Map/MainMap";
 import {useQuery} from "react-query";
-import {lodging} from "../../types";
+import {lodging} from "../../../types";
 import {AxiosError} from "axios";
-import {getLodgings} from "../../api/lodging.requests";
+import {getLodgings} from "../../../api/lodging.requests";
 
 
 const Home = () => {

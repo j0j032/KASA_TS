@@ -1,6 +1,6 @@
 import React from 'react'
 import Map, {Marker} from 'react-map-gl'
-import {Lodgings} from "../../types";
+import {Lodgings} from "../../../../types";
 
 
 const MainMap = ({lodgings}: { lodgings: Lodgings }) => {

@@ -1,4 +1,4 @@
-import {lodging} from "../../types"
+import {lodging} from "../../../../types"
 import {FaStar} from "react-icons/fa";
 import {BsGeoAlt} from "react-icons/bs";
 
