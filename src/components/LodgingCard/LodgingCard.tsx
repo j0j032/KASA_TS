@@ -1,13 +1,18 @@
-import React from 'react'
-import {FaStar} from 'react-icons/fa'
-import {BsGeoAlt} from 'react-icons/bs'
-import {lodging} from "../../types";
+import {lodging} from "../../types"
+import {FaStar} from "react-icons/fa";
+import {BsGeoAlt} from "react-icons/bs";
 
-const LodgingCard: React.FC<lodging> = ({data}) => {
-    const {title, cover, location, beds, square, Guests, price, area, rating} = data
+type LodgingCardProps = {
+    lodging: lodging
+}
+
+export function LodgingCard({lodging}: LodgingCardProps) {
+    const {title, cover, location, beds, square, Guests, price, area, rating} = lodging
+
     const bed = beds > 1 ? ' lits' : ' lit'
     const people = Guests > 1 ? ' personnes' : ' personne'
     const areas = area < 21 ? ` ${area}e` : ` ${area}`
+
     return (
         <article className='card__container'>
             <img className='card__cover' src={cover} alt={title}/>
@@ -29,5 +34,3 @@ const LodgingCard: React.FC<lodging> = ({data}) => {
         </article>
     )
 }
-
-export default LodgingCard

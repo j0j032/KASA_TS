@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from "../../components/Header/Header";
 import Filters from '../../components/Filters/Filters'
-import Gallery from "../../components/Gallery/Gallery";
+import {Gallery} from "../../components/Gallery/Gallery";
 import MainMap from "../../components/Map/MainMap";
 import {useQuery} from "react-query";
 import {lodging} from "../../types";
@@ -31,7 +31,7 @@ const Home = () => {
             <Header/>
             <Filters/>
             <main className='divide-content'>
-                <Gallery/>
+                <Gallery lodgings={data}/>
                 <MainMap lodgings={data}/>
             </main>
         </>

@@ -1,30 +1,19 @@
-import React from 'react'
-import {useQuery} from 'react-query'
-import {getLodgings} from '../../api/lodging.requests'
-import LodgingCard from '../LodgingCard/LodgingCard'
-import {AxiosError} from "axios";
-import {lodging} from "../../types";
+import {Lodgings} from "../../types";
+import {LodgingCard} from "../LodgingCard/LodgingCard";
+import React from "react";
 
-const Gallery: React.FC = (): JSX.Element => {
-    const {
-        data,
-        isLoading,
-        isError,
-        error
-    } = useQuery<Array<lodging>, AxiosError>(['lodgings'], () => getLodgings, {
-        staleTime: 100_000,
-        retry: false
-    })
-
-    const gallery = <section className='lodgings__gallery'>
-        {data?.map((lodging) => (
-            <LodgingCard key={lodging.id} data={lodging}/>
-        ))}
-    </section>
-
-    if (isError) return <p>Error: {error.message}</p>
-
-    return isLoading ? (<p>LOADING</p>) : (gallery)
+type GalleryProps = {
+    lodgings: Lodgings
 }
 
-export default Gallery
+export function Gallery({lodgings}: GalleryProps) {
+    return (
+        <>
+            <section className='lodgings__gallery'>
+                {lodgings?.map((lodging) => (
+                    <LodgingCard key={lodging.id} lodging={lodging}/>
+                ))}
+            </section>
+        </>
+    )
+}
