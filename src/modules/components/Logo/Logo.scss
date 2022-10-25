@@ -1,4 +1,10 @@
 .logo--black {
   font-family: 'monospace', sans-serif;
   color: $black;
+  rotate: -10deg;
+  
+  &:hover {
+	transition: rotate 300ms ease-in;
+	rotate: 0deg;
+  }
 }

@@ -1,22 +1,50 @@
 .searchBar {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
+  width: 40%;
+  height: 5.4rem;
+  padding: 1rem 0.8rem 1rem 2rem;
+  @include hoverEffect;
+  border: 2px solid lightgray;
+  border-radius: 50px;
   
   &__icon {
-	font-size: 2.4rem;
-	height: fit-content;
-	margin-left: 4rem;
-	color: $font-grey;
+	font-size: 2rem;
+	width: 100%;
+	color: $white;
+  }
+  
+  &__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4rem;
+	height: 4rem;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	border-radius: 100px;
+	background-color: #7FC5E0;
+	
+	&:hover {
+	  transition: 500ms ease-out;
+	  transform: scale(0.9);
+	  box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, -2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 6px 6px #7FC5E0;
+	}
   }
   
   &__input {
-	width: 24rem;
+	width: 70%;
 	height: 4rem;
-	padding-left: 1rem;
-	
 	border: none;
-	background: transparent;
+	
+	&::placeholder {
+	  font-size: 1.6rem;
+	  font-weight: 500;
+	  color: #262627;
+	}
 	
 	&:focus {
 	  outline: none;

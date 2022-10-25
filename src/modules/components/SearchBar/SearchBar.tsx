@@ -1,16 +1,16 @@
 import React from 'react';
 import {FaSearch} from "react-icons/fa";
-import {IoSearchOutline} from "react-icons/all";
 
 const SearchBar = () => {
     return (
-        <section className='searchBar'>
-            <IoSearchOutline className='searchBar__icon'/>
+        <form className='searchBar'>
+
             <input className='searchBar__input'
                    type='text'
                    placeholder='Recherche ...'
             />
-        </section>
+            <button className='searchBar__btn'><FaSearch className='searchBar__icon'/></button>
+        </form>
     );
 };
 
