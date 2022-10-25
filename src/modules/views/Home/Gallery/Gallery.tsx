@@ -7,6 +7,7 @@ type GalleryProps = {
 }
 
 export function Gallery({lodgings}: GalleryProps) {
+
     return (
         <>
             <section className='lodgings__gallery'>

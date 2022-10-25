@@ -3,23 +3,21 @@ import Filters from '../../components/Filters/Filters'
 import {Gallery} from "./Gallery/Gallery";
 import MainMap from "./Map/MainMap";
 import {useQuery} from "react-query";
-import {lodging} from "../../../types";
+import {Lodgings} from "../../../types";
 import {AxiosError} from "axios";
 import {getLodgings} from "../../../api/lodging.requests";
 
-
+// <Array<lodging>, AxiosError>
 const Home = () => {
-
     const {
         data,
         isLoading,
         isError,
         error
-    } = useQuery<Array<lodging>, AxiosError>(['lodgings'], () => getLodgings, {
+    } = useQuery<Lodgings, AxiosError>(['lodgings'], () => getLodgings, {
         staleTime: 100_000,
-        retry: false
+        retry: false,
     })
-
 
     if (isError) return <p>Error: {error.message}</p>
     if (isLoading) return <p>LOADING ...</p>

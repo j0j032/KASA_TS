@@ -4,7 +4,6 @@ import {Lodgings} from "../../../../types";
 
 
 const MainMap = ({lodgings}: { lodgings: Lodgings }) => {
-    console.log(lodgings)
     return (
         <section className='map__container'>
             <Map

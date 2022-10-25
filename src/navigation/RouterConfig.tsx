@@ -12,7 +12,6 @@ function RouterConfig() {
 
                 {/*public*/}
                 <Route path='/' element={<Home/>}/>
-                <Route path='/lodging/:id' element={<Lodging/>}/>
 
                 {/*catch all*/}
                 <Route path='*' element={<Error/>}/>
