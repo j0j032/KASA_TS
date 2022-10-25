@@ -1,0 +1,10 @@
+.lodging-item {
+  &__container {
+	width: 80vw;
+  }
+  
+  &__header {
+	@include flexRowInline();
+	justify-content: space-between;
+  }
+}

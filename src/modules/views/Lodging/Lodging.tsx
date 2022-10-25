@@ -1,9 +1,8 @@
-import './Lodging.scss'
 import {useQuery} from "react-query";
 import {getLodgings} from "../../../api/lodging.requests";
 import Modal from "../../components/Modal/Modal";
 import {Carrousel} from "./Carrousel/Carrousel";
-import {lodging, Lodgings} from "../../../types";
+import {Lodgings} from "../../../types";
 
 type LodgingProps = {
     id: string,
@@ -21,12 +20,14 @@ export function Lodging({id, closeModal}: LodgingProps) {
     if (isLoading) return <p>LOADING ...</p>
     return (
 
-        <Modal>
-            <article>
-                <button onClick={closeModal}>X</button>
+        <Modal closeModal={closeModal}>
+            <article className='lodging-item__container'>
                 {lodging !== undefined && (
                     <>
-                        <h1>{lodging.title}</h1>
+                        <section className='lodging-item__header'>
+                            <h1>{lodging.title}</h1>
+                            <button onClick={closeModal}>&times;</button>
+                        </section>
                         <Carrousel pictures={lodging.pictures} title={lodging.title}/>
                     </>
                 )}

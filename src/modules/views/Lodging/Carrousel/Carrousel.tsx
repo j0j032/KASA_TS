@@ -23,11 +23,11 @@ export function Carrousel({pictures, title}: CarrouselProps) {
 				</span>}
                 {pictures.length > 1 &&
 					<span className={'carrousel__arrow--left'} onClick={() => prevPicture()}>
-				<BsFillArrowLeftCircleFill/>
+				<BsFillArrowLeftCircleFill className='carrousel__arrow'/>
 				</span>}
                 {pictures.length > 1 &&
 					<span className={'carrousel__arrow--right'} onClick={() => nextPicture()}>
-				<BsFillArrowRightCircleFill/>
+				<BsFillArrowRightCircleFill className='carrousel__arrow'/>
 				</span>}
             </div>
         </>

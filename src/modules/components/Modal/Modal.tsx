@@ -1,13 +1,14 @@
 type ModalProps = {
-    children: JSX.Element
+    children: JSX.Element,
+    closeModal: () => void
 }
 
-const Modal = ({children}: ModalProps) => {
+const Modal = ({children, closeModal}: ModalProps) => {
 
     return (
         <>
-            <div className='modal__bg'>
-                <div className='modal__container'>
+            <div onClick={closeModal} className='modal__bg'>
+                <div onClick={(e) => e.stopPropagation()} className='modal__container'>
                     {children}
                 </div>
             </div>
