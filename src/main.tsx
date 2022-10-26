@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import RouterConfig from './navigation/RouterConfig'
-import './index.scss'
+import './styles/index.scss'
 import 'mapbox-gl/dist/mapbox-gl.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {QueryClientProvider, QueryClient} from "react-query";

@@ -1,0 +1,28 @@
+.lodging-item {
+  &__container {
+	width: 80vw;
+  }
+  
+  &__header {
+	@include flexRowInline();
+	justify-content: space-between;
+	
+	> h1 {
+	  font-size: 2rem;
+	}
+	
+	> button {
+	  font-size: 3rem;
+	  margin: 0;
+	  padding: 0.2rem 1rem;
+	  cursor: pointer;
+	  border: none;
+	  border-radius: 5px;
+	  background: $white;
+	  
+	  &:hover {
+		color: darkgrey;
+	  }
+	}
+  }
+}

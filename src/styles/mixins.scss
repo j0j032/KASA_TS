@@ -1,6 +1,6 @@
 @mixin rounded-bordered {
   padding: 0.4rem 1.2rem;
-  border: 1px solid $font-grey;
+  border: 1px solid $black;
   border-radius: 24px;
 }
 
@@ -21,5 +21,14 @@
 	transition: ease-in-out 0.3s;
 	transform: translate(0.2rem, -0.2rem);
 	box-shadow: 1px 6px 9px -4px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@mixin spreadHover {
+  &:hover {
+	transition: 500ms ease-out;
+	transform: scale(0.9);
+	border: 1px solid #76B9D3;
+	box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, -2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 6px 6px #7FC5E0;
   }
 }

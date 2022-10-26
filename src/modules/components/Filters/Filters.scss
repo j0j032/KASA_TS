@@ -1,0 +1,65 @@
+.filters {
+  &__container {
+	@include flexRowInline;
+	justify-content: space-between;
+	min-height: 8.8rem;
+	padding: 0 5.6rem;
+	background-color: $white;
+  }
+  
+  &__range-container {
+	@include flexRowInline;
+	justify-content: start;
+	
+	> p {
+	  @include rounded-bordered;
+	  margin-right: 1.2rem;
+	  
+	  > span {
+		color: $font-grey;
+	  }
+	}
+	
+	> input {
+	  cursor: pointer;
+	}
+	
+	> label {
+	  margin-left: 1.2rem;
+	  @include rounded-bordered;
+	  
+	  > span {
+		color: $font-grey;
+	  }
+	}
+  }
+  
+  &__tags-container {
+	@include flexRowInline;
+	gap: 1.6rem;
+	
+	> p {
+	  @include rounded-bordered;
+	  padding: 0.8rem 1.6rem;
+	  cursor: pointer;
+	  border: none;
+	  background: #FCEEE4;
+	  
+	  &:hover {
+		transition: 500ms ease-out;
+		transform: scale(0.9);
+		border: 1px solid #E6D6C6;
+		box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, -2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 6px 6px #FCEEE4;
+	  }
+	}
+  }
+}
+
+.sort-btn {
+  @include rounded-bordered;
+  padding-left: 3.2rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  @include hoverEffect;
+}
