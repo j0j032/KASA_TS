@@ -9,6 +9,7 @@
   border: 2px solid lightgray;
   border-radius: 50px;
   
+  
   &__icon {
 	font-size: 2rem;
 	width: 100%;
@@ -31,6 +32,7 @@
 	&:hover {
 	  transition: 500ms ease-out;
 	  transform: scale(0.9);
+	  border: 1px solid #76B9D3;
 	  box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, -2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 6px 6px #7FC5E0;
 	}
   }

@@ -44,7 +44,13 @@
 	  cursor: pointer;
 	  border: none;
 	  background: #FCEEE4;
-	  @include hoverEffect;
+	  
+	  &:hover {
+		transition: 500ms ease-out;
+		transform: scale(0.9);
+		border: 1px solid #E6D6C6;
+		box-shadow: 2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, -2px 4px 0px 0px rgba(0, 0, 0, 0.15) inset, 0px 0px 6px 6px #FCEEE4;
+	  }
 	}
   }
 }

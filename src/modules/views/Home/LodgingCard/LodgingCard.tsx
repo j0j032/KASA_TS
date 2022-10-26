@@ -14,7 +14,6 @@ export function LodgingCard({lodging}: LodgingCardProps) {
 
     const {title, cover, location, beds, square, Guests, price, area, rating, id} = lodging
     const {value: modal, setTrue: openModal, setFalse: closeModal} = useBoolean(false)
-
     const bed = beds > 1 ? ' lits' : ' lit'
     const people = Guests > 1 ? ' personnes' : ' personne'
     const areas = area < 21 ? ` ${area}e` : ` ${area}`
