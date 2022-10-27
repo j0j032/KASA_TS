@@ -6,18 +6,11 @@ import {useQuery} from "react-query";
 import {Lodgings} from "../../../types";
 import {AxiosError} from "axios";
 import {getLodgings} from "../../../api/lodging.requests";
+import {useGetLodgings} from "../../../api/useGetLodgings";
 
 // <Array<lodging>, AxiosError>
 const Home = () => {
-    const {
-        data,
-        isLoading,
-        isError,
-        error
-    } = useQuery<Lodgings, AxiosError>(['lodgings'], () => getLodgings, {
-        staleTime: 100_000,
-        retry: false,
-    })
+    const {data, isLoading, isError, error} = useGetLodgings()
 
     if (isError) return <p>Error: {error.message}</p>
     if (isLoading) return <p>LOADING ...</p>
