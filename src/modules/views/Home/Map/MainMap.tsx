@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {memo} from 'react'
 import Map, {Marker} from 'react-map-gl'
 import {Lodgings} from "../../../../types";
 
@@ -27,4 +27,4 @@ const MainMap = ({lodgings}: { lodgings: Lodgings }) => {
     )
 }
 
-export default MainMap
+export default memo(MainMap)

@@ -1,5 +1,4 @@
 import React from 'react'
-import {FaRegBell} from 'react-icons/fa'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import Logo from "../Logo/Logo";
 import SearchBar from "../SearchBar/SearchBar";
@@ -7,7 +6,7 @@ import profilePic from '../../../assets/profilePic-test.jpg'
 import {NavLink} from "react-router-dom";
 import roof from '../../../assets/roofBlue.svg'
 
-const Header = () => {
+const Header = ({setFilter}) => {
     return (
         <header className='header__container'>
             <div className='header__container--side'>
@@ -16,7 +15,7 @@ const Header = () => {
                     <Logo/>
                 </NavLink>
             </div>
-            <SearchBar/>
+            <SearchBar setFilter={setFilter}/>
             <div className='header__container--side'>
                 <section className='header__profile-container'>
                     <div className='profile__btn'>
